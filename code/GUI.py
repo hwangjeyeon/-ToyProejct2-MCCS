@@ -18,8 +18,8 @@ radiobutton2 = customtkinter.CTkRadioButton(window, text="ISO alpha3")
 text_label1 = customtkinter.CTkLabel(window, text="국가명")
 text_label2 = customtkinter.CTkLabel(window, text="국가 코드")
 
-textbox1 = customtkinter.CTkTextbox(window, width=170, height=300)
-textbox2 = customtkinter.CTkTextbox(window, width=170, height=300)
+textbox1 = customtkinter.CTkTextbox(window, width=170, height=300,border_width=2, border_color="black")
+textbox2 = customtkinter.CTkTextbox(window, width=170, height=300,border_width=2, border_color="black")
 
 
 
