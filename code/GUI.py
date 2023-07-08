@@ -27,8 +27,8 @@ button1 = customtkinter.CTkButton(frame1, text="변환", width=50)
 button2 = customtkinter.CTkButton(frame1, text="변환", width=50)
 
 
-canvas1 = tkinter.Canvas(frame1, width=50, height=20)
-canvas2 = tkinter.Canvas(frame1, width=50, height=20)
+canvas1 = tkinter.Canvas(frame1, width=50, height=20, bg="#ebebeb", bd=0, highlightthickness=0)
+canvas2 = tkinter.Canvas(frame1, width=50, height=20, bg="#ebebeb", bd=0, highlightthickness=0)
 canvas1.create_line(0, 10, 50, 10, arrow="last", width=2)
 canvas2.create_line(50, 10, 0, 10, arrow="last", width=2)
 
