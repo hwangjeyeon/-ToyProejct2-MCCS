@@ -2,6 +2,8 @@ import tkinter
 
 import customtkinter
 
+import func
+
 window = customtkinter.CTk()
 window.geometry("500x500")
 window.title("Test")
@@ -45,3 +47,9 @@ button1.grid(row=0,column=0,padx=0,pady=30)
 button2.grid(row=3,column=0,padx=0,pady=0)
 canvas1.grid(row=1, column=0,padx=0,pady=15)
 canvas2.grid(row=2, column=0,padx=0,pady=40)
+
+
+radiobutton1.bind("<ButtonRelease-1>", func.RBChk1)
+radiobutton2.bind("<ButtonRelease-1>", func.RBChk2)
+button1.bind("<ButtonRelease-1>", func.GetText1)
+button2.bind("<ButtonRelease-1>", func.GetText2)
