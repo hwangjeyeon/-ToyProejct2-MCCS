@@ -6,23 +6,29 @@ import func
 
 window = customtkinter.CTk()
 window.geometry("500x500")
-window.title("Test")
+window.title("MCCS")
 window.resizable(False,False)
 window.grid_columnconfigure((0,2),weight=1)
 window.grid_rowconfigure((2,20),weight=1)
+
+
 frame1 = customtkinter.CTkFrame(window, fg_color="transparent")
+
 
 align_label1 = customtkinter.CTkLabel(window, text="", anchor="center")
 
+
 radiobutton1 = customtkinter.CTkRadioButton(window, text="ISO alpha2")
 radiobutton2 = customtkinter.CTkRadioButton(window, text="ISO alpha3")
+radiobutton1.select()
+
 
 text_label1 = customtkinter.CTkLabel(window, text="국가명")
 text_label2 = customtkinter.CTkLabel(window, text="국가 코드")
 
+
 textbox1 = customtkinter.CTkTextbox(window, width=170, height=300,border_width=2, border_color="black")
 textbox2 = customtkinter.CTkTextbox(window, width=170, height=300,border_width=2, border_color="black")
-
 
 
 button1 = customtkinter.CTkButton(frame1, text="변환", width=50)
